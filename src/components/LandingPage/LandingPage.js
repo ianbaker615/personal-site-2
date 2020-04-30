@@ -18,6 +18,12 @@ const useStyles = makeStyles(theme => ({
       fontSize: "3em",
       padding: "8px"
     }
+  },
+  avatar: {
+    maxWidth: "250px",
+    height: "auto",
+    borderRadius: "50%",
+    padding: "3em"
   }
 }));
 
@@ -29,7 +35,7 @@ function LandingPage(props) {
         <img
           src="https://i.imgur.com/1TqgWa6l.jpg?1"
           alt="avatar"
-          className={classes.img}
+          className={classes.avatar}
         />
       </Grid>
       <Grid item xs={6}>
