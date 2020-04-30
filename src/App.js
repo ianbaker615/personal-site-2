@@ -8,7 +8,6 @@ import Resume from "./components/Resume/Resume";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { AppBar, Toolbar, Typography, Tab, Tabs } from "@material-ui/core";
 
-
 function App() {
   return (
     <Router>
@@ -36,7 +35,7 @@ function App() {
           <Route path="/aboutme" component={AboutMe} />
           <Route path="/resume" component={Resume} />
           <Route path="/contact" component={Contact} />
-        </Switch>   
+        </Switch>
       </div>
     </Router>
   );
