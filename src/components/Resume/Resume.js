@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
     paddingTop: "1em"
   },
   contactLinks: {
-    paddingLeft: "1em"
+    padding: "0 0 0.5em 1em"
   }
 }));
 
