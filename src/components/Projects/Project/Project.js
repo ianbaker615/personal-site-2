@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Grid,
   Card,
   CardActions,
   CardActionArea,
@@ -13,7 +12,6 @@ import {
 function Project(props) {
   return (
     <div>
-      <Grid item xs={4}>
         <Card
           shadow={5}
           style={{
@@ -63,7 +61,6 @@ function Project(props) {
             </Button>
           </CardActions>
         </Card>
-      </Grid>
     </div>
   );
 }

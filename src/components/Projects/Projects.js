@@ -5,8 +5,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
   projectsGrid: {
-    paddingTop: "50px"
-  }
+    padding: "8em 0 2em 5em",
+  },
 }));
 
 function Projects() {
