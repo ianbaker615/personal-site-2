@@ -5,7 +5,10 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
   projectsGrid: {
-    padding: "8em 0 2em 5em",
+    margin: "0",
+    padding: "0.5em 0 0 2em",
+    overflowY: "scroll",
+    maxHeight: "90.65vh"
   },
 }));
 
