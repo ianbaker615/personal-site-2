@@ -1,23 +1,33 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
+import { Grid, Paper } from "@material-ui/core";
 import Experience from "./ResumeFields/Experience";
 import Skills from "./ResumeFields/Skills";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
-  leftColumn: {},
+  leftColumn: {
+    textAlign: "center",
+    paddingTop: "3em",
+  },
   rightColumn: {
     background: "#27221f",
     color: "white",
     padding: "2em",
-    maxHeight: "100vh",
+    maxHeight: "90.65vh",
     overflowY: "scroll"
   },
   avatar: {
     maxWidth: "150px",
     height: "auto",
     borderRadius: "50%"
-  }
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+    color: theme.palette.text.secondary,
+    width: "60%",
+    margin: "auto"
+  },
 }));
 
 function Resume() {
@@ -25,36 +35,38 @@ function Resume() {
   return (
     <Grid container>
       <Grid item xs={4} className={classes.leftColumn}>
-        <img
-          src="https://i.imgur.com/1TqgWa6l.jpg?1"
-          alt="avatar"
-          className={classes.avatar}
-        />
-        <h2>Ian Baker</h2>
-        <h4 style={{ color: "grey" }}>Software Developer</h4>
-        <h5>Phone</h5>
-        <p>(615) 957-4407</p>
-        <h5>Email</h5>
-        <p>ianbaker615@gmail.com</p>
-        <h5>Web</h5>
-        <a href="google.com">IansSiteNeedsURL.com</a>
-        {/* LinkedIn */}
-        <a
-          href="https://www.linkedin.com/in/ianpbaker/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fa fa-linkedin-square" />
-        </a>
+        <Paper className={classes.paper}>
+          <img
+            src="https://i.imgur.com/1TqgWa6l.jpg?1"
+            alt="avatar"
+            className={classes.avatar}
+          />
+          <h2>Ian Baker</h2>
+          <h4 style={{ color: "grey" }}>Software Developer</h4>
+          <h5>Phone</h5>
+          <p>(615) 957-4407</p>
+          <h5>Email</h5>
+          <p>ianbaker615@gmail.com</p>
+          <h5>Web</h5>
+          <a href="google.com">IansSiteNeedsURL.com</a>
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/ianpbaker/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa fa-linkedin-square" />
+          </a>
 
-        {/* Github */}
-        <a
-          href="https://github.com/ianbaker615/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i className="fa fa-github-square" />
-        </a>
+          {/* Github */}
+          <a
+            href="https://github.com/ianbaker615/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fa fa-github-square" />
+          </a>
+        </Paper>
       </Grid>
 
       <Grid item xs={8} className={classes.rightColumn}>
