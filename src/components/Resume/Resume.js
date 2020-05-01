@@ -7,7 +7,14 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(theme => ({
   leftColumn: {
     textAlign: "center",
-    paddingTop: "3em",
+    paddingTop: "3em"
+  },
+  paper: {
+    padding: theme.spacing(1),
+    textAlign: "center",
+    color: theme.palette.text.secondary,
+    width: "60%",
+    margin: "auto"
   },
   rightColumn: {
     background: "#27221f",
@@ -19,15 +26,12 @@ const useStyles = makeStyles(theme => ({
   avatar: {
     maxWidth: "150px",
     height: "auto",
-    borderRadius: "50%"
+    borderRadius: "50%",
+    paddingTop: "1em"
   },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-    width: "60%",
-    margin: "auto"
-  },
+  contactLinks: {
+    paddingLeft: "1em"
+  }
 }));
 
 function Resume() {
@@ -43,29 +47,74 @@ function Resume() {
           />
           <h2>Ian Baker</h2>
           <h4 style={{ color: "grey" }}>Software Developer</h4>
-          <h5>Phone</h5>
-          <p>(615) 957-4407</p>
-          <h5>Email</h5>
-          <p>ianbaker615@gmail.com</p>
-          <h5>Web</h5>
-          <a href="google.com">IansSiteNeedsURL.com</a>
-          {/* LinkedIn */}
-          <a
-            href="https://www.linkedin.com/in/ianpbaker/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-linkedin-square" />
-          </a>
 
-          {/* Github */}
-          <a
-            href="https://github.com/ianbaker615/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i className="fa fa-github-square" />
-          </a>
+          <div className={classes.contactLinks} align="left">
+            {/* Phone */}
+            <a href="tel:1-615-957-4407">
+              <i class="fa fa-phone-square" />
+            </a>
+            <a href="tel:1-615-957-4407" className="resume-links">
+              (615)-957-4407
+            </a>
+            <br />
+
+            {/* Email */}
+            <a href="mailto:ianbaker615@gmail.com">
+              <i class="fa fa-envelope-square" />
+            </a>
+            <a href="mailto:ianbaker615@gmail.com" className="resume-links">
+              ianbaker615@gmail.com
+            </a>
+            <br />
+
+            {/* Website */}
+            <a
+              href="https://www.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-globe" />
+            </a>
+            <a href="google.com" className="resume-links">
+              IansSiteNeedsURL.com
+            </a>
+
+            {/* LinkedIn */}
+            <a
+              href="https://www.linkedin.com/in/ianpbaker/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa fa-linkedin-square" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ianpbaker/"
+              className="resume-links"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/ianpbaker
+            </a>
+            <br />
+
+            {/* Github */}
+            <a
+              href="https://github.com/ianbaker615/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fa fa-github-square" />
+            </a>
+            <a
+              href="https://github.com/ianbaker615/"
+              className="resume-links"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/ianbaker615
+            </a>
+            <br />
+          </div>
         </Paper>
       </Grid>
 
