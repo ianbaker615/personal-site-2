@@ -38,7 +38,7 @@ function Resume() {
   const classes = useStyles();
   return (
     <Grid container>
-      <Grid item xs={4} className={classes.leftColumn}>
+      <Grid item xs={12} md={4} className={classes.leftColumn}>
         <Paper className={classes.paper}>
           <img
             src="https://i.imgur.com/1TqgWa6l.jpg?1"
@@ -78,6 +78,7 @@ function Resume() {
             <a href="google.com" className="resume-links">
               IansSiteNeedsURL.com
             </a>
+            <br/>
 
             {/* LinkedIn */}
             <a
@@ -118,7 +119,7 @@ function Resume() {
         </Paper>
       </Grid>
 
-      <Grid item xs={8} className={classes.rightColumn}>
+      <Grid item xs={12} md={8} className={classes.rightColumn}>
         <h4>Education</h4>
         <Experience
           startYear={2012}

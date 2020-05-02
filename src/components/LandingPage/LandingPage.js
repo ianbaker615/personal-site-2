@@ -6,7 +6,8 @@ const useStyles = makeStyles(theme => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    color: theme.palette.text.secondary
+    color: theme.palette.text.secondary,
+    margin: "1em"
   },
   socialLinks: {
     display: "flex",
@@ -21,7 +22,7 @@ const useStyles = makeStyles(theme => ({
   },
   avatar: {
     maxWidth: "250px",
-    height: "auto",
+    height: "12em",
     borderRadius: "50%",
     padding: "3em"
   }
@@ -38,7 +39,7 @@ function LandingPage(props) {
           className={classes.avatar}
         />
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={10}>
         <Paper className={classes.paper}>
           <h1>Full Stack Web Developer</h1>
           <p>Javascript | React | Node | Mocha | HMTL | CSS | CLI</p>

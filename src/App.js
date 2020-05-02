@@ -16,7 +16,7 @@ function App() {
             <Toolbar className="toolbar">
               <Typography variant="h5" style={{ flex: 1 }}>
                 <Link style={{ textDecoration: "none", color: "white" }} to="/">
-                  Ian Baker // Software Engineer
+                  Ian // Baker
                 </Link>
               </Typography>
               <Tabs>

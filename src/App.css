@@ -21,10 +21,6 @@
     opacity: 0.8;
 }
 
-.MuiGrid-root {
-    flex-grow: 1;
-}
-
 .resume-links {
     text-decoration: none;
     color: #fa766e;

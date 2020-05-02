@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Paper } from "@material-ui/core";
+import { Paper, Grid } from "@material-ui/core";
 
 
 const useStyles = makeStyles(theme => ({
@@ -21,7 +21,9 @@ const useStyles = makeStyles(theme => ({
 function AboutMe(props) {
   const classes = useStyles();
   return (
-      <Paper className={classes.paper}>
+      <Grid container>
+        <Grid item xs={12}>
+        <Paper className={classes.paper}>
         <p>Hello!</p>
         <p className={classes.textIndent}>
           Thank you for visiting!
@@ -57,6 +59,8 @@ function AboutMe(props) {
           I can't wait to work with you etc.
         </p>
       </Paper>
+        </Grid>
+      </Grid>
   );
 }
 
