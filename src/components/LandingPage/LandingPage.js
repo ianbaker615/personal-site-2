@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
     -moz-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.49);
     box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.49);`,
     [theme.breakpoints.up('sm')]: {
-      maxWidth: "270px",
+      maxWidth: "250px",
     },
   }
 }));
