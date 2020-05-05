@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Paper } from "@material-ui/core";
+import { Grid, Paper, Divider } from "@material-ui/core";
 import Experience from "./ResumeFields/Experience";
 import Skills from "./ResumeFields/Skills";
 import { makeStyles } from "@material-ui/core/styles";
@@ -40,7 +40,13 @@ const useStyles = makeStyles(theme => ({
   contactLinks: {
     padding: "0 0 0.5em 1em",
     textAlign: "left"
-  }
+  },
+  divider: {
+    margin: "0 25%",
+    width: "50%",
+    backgroundColor: "white",
+    opacity: "0.3"
+  },
 }));
 
 function Resume() {
@@ -129,7 +135,9 @@ function Resume() {
       </Grid>
 
       <Grid item xs={12} md={8} className={classes.rightColumn}>
-        <h4>Education</h4>
+
+        <h2>Education</h2>
+
         <Experience
           startYear={2012}
           endYear={2016}
@@ -139,8 +147,10 @@ function Resume() {
             "Minor in Music Technology"
           ]}
         />
-        <hr style={{ borderTop: "3px solid #e22947" }} />
-        <h4>Experience</h4>
+
+        <Divider className={classes.divider} orientation="horizontal"/>
+
+        <h2>Experience</h2>
         <Experience
           startYear="Sept"
           endYear="Dec 2019"
@@ -152,6 +162,7 @@ function Resume() {
             "Anticipated and responded to feedback in iterative code review process"
           ]}
         />
+
         <Experience
           startYear="2018"
           endYear="2019"
@@ -161,6 +172,7 @@ function Resume() {
             "Built Python scripts to automate and streamline salesperson workflows to improve efficiency and speed of service"
           ]}
         />
+
         <Experience
           startYear="2016"
           endYear="2018"
@@ -171,7 +183,9 @@ function Resume() {
           ]}
         />
 
-        <h4>Programming Experience</h4>
+        <Divider className={classes.divider} orientation="horizontal"/>
+
+        <h2>Programming Experience</h2>
         <Experience
           jobName="Colt Steele’s “Web Developer Bootcamp”"
           bullets={[
@@ -186,7 +200,8 @@ function Resume() {
             "Automated online chat program and internal emails using Python to increase sales and response speed at Chicago Music Exchange"
           ]}
         />
-        <h4>Technologies</h4>
+        <Divider className={classes.divider} orientation="horizontal"/>
+        <h2>Technologies</h2>
         <Skills
           skills={[
             "Javascript - ES6",
