@@ -1,36 +1,37 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Paper, Grid } from "@material-ui/core";
+import { Paper, Grid, Divider } from "@material-ui/core";
 
 
 const useStyles = makeStyles(theme => ({
   paper: {
     padding: "2em",
     textAlign: "left",
-    color: theme.palette.text.secondary,
-    width: "60%",
-    margin: "3em",
-    maxHeight: "80vh",
-    overflowY: "scroll"
+    color: theme.palette.text.primary,
+    margin: "3em 0 3em 0"
   },
   textIndent: {
     textIndent: "1em",
+  },
+  divider: {
+    margin: "0 25%",
+    width: "50%"
   },
 }));
 
 function AboutMe(props) {
   const classes = useStyles();
   return (
-      <Grid container>
-        <Grid item xs={12}>
+      <Grid container justify="center">
+        <Grid item xs={11} sm={10} md={9} lg={8}>
         <Paper className={classes.paper}>
-        <p>Hello!</p>
         <p className={classes.textIndent}>
           Thank you for visiting!
           I am a Passionate educator and self motivated learner dedicated to teaching and inspiring others. 
           My strong interpersonal skills augment my foundation in critical software engineering principles. 
           I am eager to leverage my technical experience and ability to learn quickly to further my career in tech!
         </p>
+        <Divider className={classes.divider}/>
         <p className={classes.textIndent}>
           I am always looking to learn more about software development and further my craft. 
           My experiences in programming and engineering classes at Northwestern University enabled me 
@@ -44,9 +45,9 @@ function AboutMe(props) {
           and crafting different app-experiences for users with varied authorizations for a 
           medium sized proprietary API.
         </p>
-
+        <Divider className={classes.divider}/>
         <p className={classes.textIndent}>
-          Working as a classical guitar teacher has also helped me develop excellent communication 
+          Working as a classical guitar teacher has taught me excellent communication 
           skills and the ability to facilitate productive conversations between coworkers, 
           parents, and students. 
           In my time as a teacher, I was selected to be the lead educator for a new after school 
@@ -54,7 +55,7 @@ function AboutMe(props) {
           and group concerts with students from first to seventh grade granted me a lot of experience 
           with goal setting and persistence.        
         </p>
-
+        <Divider className={classes.divider}/>
         <p className={classes.textIndent}>
           I can't wait to work with you etc.
         </p>
