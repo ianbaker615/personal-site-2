@@ -7,30 +7,39 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(theme => ({
   leftColumn: {
     textAlign: "center",
-    paddingTop: "3em"
+    paddingTop: "2em",
+  },
+  avatar: {
+    maxWidth: "150px",
+    height: "auto",
+    borderRadius: "50%",
+    marginTop: "1em",
+    boxShadow: `-webkit-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.49);
+    -moz-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.49);
+    box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.49);`,
   },
   paper: {
     padding: theme.spacing(1),
     textAlign: "center",
     color: theme.palette.text.secondary,
-    width: "60%",
-    margin: "auto"
+    width: "80%",
+    margin: "auto",
+    marginBottom:"2em",
   },
   rightColumn: {
     background: "#27221f",
     color: "white",
     padding: "2em",
     maxHeight: "90.65vh",
-    overflowY: "scroll"
-  },
-  avatar: {
-    maxWidth: "150px",
-    height: "auto",
-    borderRadius: "50%",
-    paddingTop: "1em"
+    overflowY: "scroll",
+    [theme.breakpoints.down('sm')]: {
+      overflowY: "visible",
+      maxHeight: "100%"
+    },
   },
   contactLinks: {
-    padding: "0 0 0.5em 1em"
+    padding: "0 0 0.5em 1em",
+    textAlign: "left"
   }
 }));
 
@@ -48,7 +57,7 @@ function Resume() {
           <h2>Ian Baker</h2>
           <h4 style={{ color: "grey" }}>Software Developer</h4>
 
-          <div className={classes.contactLinks} align="left">
+          <div className={classes.contactLinks}>
             {/* Phone */}
             <a href="tel:1-615-957-4407">
               <i class="fa fa-phone-square" />
