@@ -28,7 +28,7 @@ function AboutMe(props) {
         <p className={classes.textIndent}>
           Thank you for visiting!
           I am a Passionate educator and self motivated learner dedicated to teaching and inspiring others. 
-          My strong interpersonal skills augment my foundation in critical software engineering principles. 
+          My strong interpersonal skills augment a foundation in critical software engineering principles. 
           I am eager to leverage my technical experience and ability to learn quickly to further my career in tech!
         </p>
         <Divider className={classes.divider}/>
@@ -40,14 +40,14 @@ function AboutMe(props) {
           I have studied web design and have crafted my own fully functional website with many of the 
           elements required of modern sites, such as user authentication, a pleasant 
           Graphical User Interface, and data persistence. 
-          My most recent developer work was an internship that I completed at Infinity Interactive. 
+          My most recent developer work was an internship with Infinity Interactive. 
           In this position I was tasked with creating users, securing their data, 
           and crafting different app-experiences for users with varied authorizations for a 
           medium sized proprietary API.
         </p>
         <Divider className={classes.divider}/>
         <p className={classes.textIndent}>
-          Working as a classical guitar teacher has taught me excellent communication 
+          My previous work as a classical guitar teacher has taught me excellent communication 
           skills and the ability to facilitate productive conversations between coworkers, 
           parents, and students. 
           In my time as a teacher, I was selected to be the lead educator for a new after school 
@@ -57,8 +57,12 @@ function AboutMe(props) {
         </p>
         <Divider className={classes.divider}/>
         <p className={classes.textIndent}>
-          I can't wait to work with you etc.
+          I appreciate you taking the time to learn a little about me! Please feel free to reach out to
+          me at my email or on LinkedIn. I am currently looking for a full time position and am open to
+          contract work as well.
         </p>
+        <p>Best,</p>
+        <p>Ian</p>
       </Paper>
         </Grid>
       </Grid>
