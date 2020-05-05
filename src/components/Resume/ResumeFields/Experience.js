@@ -3,12 +3,17 @@ import { Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
+  jobTitle: {
+
+  },
   dateRange: {
     textAlign: "right",
+
     [theme.breakpoints.down('sm')]: {
       textAlign: "left"
     },
-  }
+  },
+  
 }));
 
 function Experience(props) {
@@ -16,8 +21,8 @@ function Experience(props) {
 
   return (
     <Grid item container xs={12}>
-
-      <Grid item xs={12} md={9}>
+    
+      <Grid item xs={12} md={9} className={classes.jobTitle}>
         <h4>{props.jobName}</h4>
       </Grid>
 

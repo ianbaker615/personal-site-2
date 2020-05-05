@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
   rightColumn: {
     background: "#27221f",
     color: "white",
-    padding: "2em",
+    padding: "0 2em",
     maxHeight: "90.65vh",
     overflowY: "scroll",
     [theme.breakpoints.down('sm')]: {
@@ -42,7 +42,7 @@ const useStyles = makeStyles(theme => ({
     textAlign: "left"
   },
   divider: {
-    margin: "0 25%",
+    
     width: "50%",
     backgroundColor: "white",
     opacity: "0.3"
@@ -137,7 +137,7 @@ function Resume() {
       <Grid item xs={12} md={8} className={classes.rightColumn}>
 
         <h2>Education</h2>
-
+        <Divider className={classes.divider} orientation="horizontal"/>
         <Experience
           startYear={2012}
           endYear={2016}
@@ -148,9 +148,8 @@ function Resume() {
           ]}
         />
 
-        <Divider className={classes.divider} orientation="horizontal"/>
-
         <h2>Experience</h2>
+        <Divider className={classes.divider} orientation="horizontal"/>
         <Experience
           startYear="Sept"
           endYear="Dec 2019"
@@ -183,14 +182,12 @@ function Resume() {
           ]}
         />
 
-        <Divider className={classes.divider} orientation="horizontal"/>
-
         <h2>Programming Experience</h2>
+        <Divider className={classes.divider} orientation="horizontal"/>
         <Experience
           jobName="Colt Steele’s “Web Developer Bootcamp”"
           bullets={[
-            "YelpCamp project featuring: RESTful routing, Data persistence, Database management, User authentication, Version control, Deployed with Heroku",
-            "Final Project Link: https://tranquil-harbor-51785.herokuapp.com/"
+            "YelpCamp project featuring: RESTful routing, Data persistence, Database management, User authentication, Version control, Deployed with Heroku"
           ]}
         />
         <Experience
@@ -200,8 +197,9 @@ function Resume() {
             "Automated online chat program and internal emails using Python to increase sales and response speed at Chicago Music Exchange"
           ]}
         />
-        <Divider className={classes.divider} orientation="horizontal"/>
+
         <h2>Technologies</h2>
+        <Divider className={classes.divider} orientation="horizontal"/>
         <Skills
           skills={[
             "Javascript - ES6",
