@@ -33,7 +33,7 @@ function App() {
           <AppBar position="relative">
             <Toolbar component="nav" variant="dense" className={classes.toolbar}>
               <Typography variant="h5" style={{ flex: 1 }}>
-                <Link style={{ textDecoration: "none", color: "white" }} to="/" >
+                <Link style={{ textDecoration: "none", color: "white" }} to="https://ianbaker615.github.io/personal-site-2/" >
                   Ian Baker // Software Engineer
                 </Link>
               </Typography>
@@ -46,7 +46,7 @@ function App() {
           </AppBar>
         </nav>
         <Switch>
-          <Route exact path="/" component={LandingPage} />
+          <Route exact path="https://ianbaker615.github.io/personal-site-2/" component={LandingPage} />
           <Route path="/projects" component={Projects} />
           <Route path="/aboutme" component={AboutMe} />
           <Route path="/resume" component={Resume} />
