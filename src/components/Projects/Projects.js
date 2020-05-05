@@ -50,6 +50,42 @@ function Projects() {
             liveDemo="https://ianbaker615.github.io/meteorite_tracker/"
           />
         </Grid>
+
+        <Grid item key={1} xs={12} sm={6} md={4}>
+          {/* RGB Guess Game */}
+          <Project
+            imageUrl="https://i.imgur.com/3HW2w8u.png"
+            imageTitle="Game Homscreen"
+            title="RGB Guess Game"
+            description="Try to guess the color based on the rgb value displayed at the top of the page!"
+            github="https://github.com/ianbaker615/RGB-Guess-Game"
+            liveDemo="https://ianbaker615.github.io/RGB-Guess-Game/"
+          />
+        </Grid>
+
+        <Grid item key={1} xs={12} sm={6} md={4}>
+          {/* Etch-A-Sketch */}
+          <Project
+            imageUrl="https://i.imgur.com/LMo3wpd.png"
+            imageTitle="Etch A Sketch Homescreen"
+            title="Etch-A-Sketch"
+            description="Etch-a-Sketch project for The Odin Project"
+            github="https://github.com/ianbaker615/etch-a-sketch"
+            liveDemo="https://ianbaker615.github.io/etch-a-sketch/"
+          />
+        </Grid>
+
+        <Grid item key={1} xs={12} sm={6} md={4}>
+          {/* To Do */}
+          <Project
+            imageUrl="https://i.imgur.com/W7eiROw.png"
+            imageTitle="To do list"
+            title="To Do List"
+            description="A simple to do list!"
+            github="https://github.com/ianbaker615/To-Do-List"
+            liveDemo="https://ianbaker615.github.io/To-Do-List/"
+          />
+        </Grid>
       </Grid>
     </Container>
   );
