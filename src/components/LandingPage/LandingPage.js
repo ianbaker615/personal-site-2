@@ -7,7 +7,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2),
     textAlign: "center",
     color: theme.palette.text.secondary,
-    margin: "1em"
+    margin: "1em",
   },
   socialLinks: {
     display: "flex",
@@ -21,10 +21,16 @@ const useStyles = makeStyles(theme => ({
     }
   },
   avatar: {
-    maxWidth: "250px",
-    height: "12em",
+    maxWidth: "200px",
+    height: "auto",
+    margin: "3em 0",
     borderRadius: "50%",
-    padding: "3em"
+    boxShadow: `-webkit-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.49);
+    -moz-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.49);
+    box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.49);`,
+    [theme.breakpoints.up('sm')]: {
+      maxWidth: "270px",
+    },
   }
 }));
 
@@ -39,7 +45,7 @@ function LandingPage(props) {
           className={classes.avatar}
         />
       </Grid>
-      <Grid item xs={10}>
+      <Grid item xs={12} sm={10} md={6}>
         <Paper className={classes.paper}>
           <h1>Full Stack Web Developer</h1>
           <p>Javascript | React | Node | Mocha | HMTL | CSS | CLI</p>
