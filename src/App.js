@@ -46,10 +46,10 @@ function App() {
           </AppBar>
         </nav>
         <Switch>
-          <Route path="/" component={LandingPage} />
           <Route path="/projects" component={Projects} />
           <Route path="/aboutme" component={AboutMe} />
           <Route path="/resume" component={Resume} />
+          <Route path="/" component={LandingPage} />
         </Switch>
         </ThemeProvider>
       </div>
