@@ -26,7 +26,7 @@ function App() {
   const classes = useStyles();
 
   return (
-    <Router>
+    <Router basename="/">
       <div className="App">
         <ThemeProvider theme={theme}>
         <nav>
