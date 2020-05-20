@@ -78,7 +78,7 @@ function Projects() {
         <Grid item key={1} xs={12} sm={6} md={4}>
           {/* Lights Out */}
           <Project
-            imageUrl="https://i.imgur.com/uJNfUXvm.png"
+            imageUrl="https://i.imgur.com/uJNfUXv.png"
             imageTitle="Lights Out"
             title="Lights Out"
             description="The classic game Lights Out built with React"
