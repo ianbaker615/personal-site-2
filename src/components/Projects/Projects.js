@@ -76,14 +76,14 @@ function Projects() {
         </Grid>
 
         <Grid item key={1} xs={12} sm={6} md={4}>
-          {/* To Do */}
+          {/* Lights Out */}
           <Project
-            imageUrl="https://i.imgur.com/W7eiROw.png"
-            imageTitle="To do list"
-            title="To Do List"
-            description="A simple to do list!"
-            github="https://github.com/ianbaker615/To-Do-List"
-            liveDemo="https://ianbaker615.github.io/To-Do-List/"
+            imageUrl="https://i.imgur.com/uJNfUXvm.png"
+            imageTitle="Lights Out"
+            title="Lights Out"
+            description="The classic game Lights Out built with React"
+            github="https://github.com/ianbaker615/Lights-Out"
+            liveDemo="https://ianbaker615.github.io/Lights-Out/"
           />
         </Grid>
       </Grid>
