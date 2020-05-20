@@ -4,7 +4,8 @@ import LandingPage from "./components/LandingPage/LandingPage";
 import AboutMe from "./components/AboutMe/AboutMe";
 import Projects from "./components/Projects/Projects";
 import Resume from "./components/Resume/Resume";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Drawer from "./components/Drawer/Drawer";
+import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { AppBar, Toolbar, Typography, Tab, Tabs } from "@material-ui/core";
 import { makeStyles, createMuiTheme, responsiveFontSizes, ThemeProvider } from '@material-ui/core/styles';
 
