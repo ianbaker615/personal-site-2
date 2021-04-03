@@ -4,7 +4,7 @@ import Experience from "./ResumeFields/Experience";
 import Skills from "./ResumeFields/Skills";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   leftColumn: {
     textAlign: "center",
     paddingTop: "2em",
@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
     color: theme.palette.text.secondary,
     width: "80%",
     margin: "auto",
-    marginBottom:"2em",
+    marginBottom: "2em",
   },
   rightColumn: {
     background: "#27221f",
@@ -32,20 +32,19 @@ const useStyles = makeStyles(theme => ({
     padding: "0 2em",
     maxHeight: "90.65vh",
     overflowY: "scroll",
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
       overflowY: "visible",
-      maxHeight: "100%"
+      maxHeight: "100%",
     },
   },
   contactLinks: {
     padding: "0 0 0.5em 1em",
-    textAlign: "left"
+    textAlign: "left",
   },
   divider: {
-    
     width: "50%",
     backgroundColor: "white",
-    opacity: "0.3"
+    opacity: "0.3",
   },
 }));
 
@@ -93,7 +92,7 @@ function Resume() {
             <a href="google.com" className="resume-links">
               IansSiteNeedsURL.com
             </a>
-            <br/>
+            <br />
 
             {/* LinkedIn */}
             <a
@@ -135,30 +134,53 @@ function Resume() {
       </Grid>
 
       <Grid item xs={12} md={8} className={classes.rightColumn}>
-
         <h2>Education</h2>
-        <Divider className={classes.divider} orientation="horizontal"/>
+        <Divider className={classes.divider} orientation="horizontal" />
         <Experience
           startYear={2012}
           endYear={2016}
           jobName="Northwestern University - Evanston, IL"
           bullets={[
             "Bachelor of Music in Guitar Performance, June 2016",
-            "Minor in Music Technology"
+            "Minor in Music Technology",
+          ]}
+        />
+
+        <Experience
+          startYear={"Dec."}
+          endYear={"2020"}
+          jobName="Amazon Web Services Certified Solutions Architect - Associate Certification"
+          bullets={[
+            "Learned how to architect and deploy secure, robust applications on on AWS technologies",
+            "Studied architectural design principles to design solutions based on customer requirements",
+            "Gained tools to provide implementation guidance based on best practices through entire lifecycle of project",
           ]}
         />
 
         <h2>Experience</h2>
-        <Divider className={classes.divider} orientation="horizontal"/>
+        <Divider className={classes.divider} orientation="horizontal" />
         <Experience
-          startYear="Sept"
-          endYear="Dec 2019"
+          startYear="2020"
+          endYear="Present"
+          jobName="Information Technology Engineer, JC Consulting"
+          bullets={[
+            "Leveraged Python, Javascript, SQL, to build effective automation tools for web browser and command line",
+            "Launched private Rocket.Chat server in AWS cloud to act as backup communication channel",
+            "Drove adoption of fundamental software development principles: version control with Git, error reporting, issue tracking",
+            "Facilitated agreement for $60,000 contract aimed at improving JC Consulting’s flagship product",
+            "Empowered employees to problem-solve through technical support, education",
+          ]}
+        />
+
+        <Experience
+          startYear="Sep. 2019"
+          endYear="Dec. 2019"
           jobName="Software Engineer, Infinity Interactive"
           bullets={[
-            "Created API endpoints for user creation and implemented unit tests using Mocha.js",
-            "Refactored a large code base to conform to ES6 standards",
-            "Utilized CLI tools ag, sed, npm, etc to streamline workflow",
-            "Anticipated and responded to feedback in iterative code review process"
+            "Programmed API endpoints in Node.js for Infinity Interactive’s proprietary Node API",
+            "Utilized CLI tools ag, sed, and npm to streamline development workflows",
+            "Refactored large Javascript codebase to conform to ES6 standards",
+            "Engaged in productive dialogue with senior engineers in iterative code review process",
           ]}
         />
 
@@ -167,8 +189,9 @@ function Resume() {
           endYear="2019"
           jobName="Online Sales Specialist, Chicago Music Exchange"
           bullets={[
-            "Conducted musical instrument web sales via online chat, email, Reverb.com, and social media with hundreds of weekly customers",
-            "Built Python scripts to automate and streamline salesperson workflows to improve efficiency and speed of service"
+            "Generated musical instrument sales via online chat, email, Reverb.com, and social media",
+            "Produced Python scripts with Selenium module to automate salesperson workflows",
+            "Maintained and organized large client base of 100+ musicians",
           ]}
         />
 
@@ -177,41 +200,9 @@ function Resume() {
           endYear="2018"
           jobName="Teaching Artist, Chicago Institute for Music Education"
           bullets={[
-            "Lead an after school guitar program with 30+ students per class",
-            "Taught private guitar lessons and group classes of 4-7 students aged 4-70"
-          ]}
-        />
-
-        <h2>Programming Experience</h2>
-        <Divider className={classes.divider} orientation="horizontal"/>
-        <Experience
-          jobName="Colt Steele’s “Web Developer Bootcamp”"
-          bullets={[
-            "YelpCamp project featuring: RESTful routing, Data persistence, Database management, User authentication, Version control, Deployed with Heroku"
-          ]}
-        />
-        <Experience
-          jobName="Al Sweigart’s “Automate the Boring Stuff with Python”"
-          bullets={[
-            "Key Concepts: Data structures, Control Flow, Functions, Regular expressions, GUI automation",
-            "Automated online chat program and internal emails using Python to increase sales and response speed at Chicago Music Exchange"
-          ]}
-        />
-
-        <h2>Technologies</h2>
-        <Divider className={classes.divider} orientation="horizontal"/>
-        <Skills
-          skills={[
-            "Javascript - ES6",
-            "React",
-            "Node.js",
-            "Mocha.js",
-            "Python",
-            "Git",
-            "Command Line",
-            "HTML",
-            "CSS",
-            "SQL"
+            "Lead after school guitar program in underserved Chicago neighborhood, three student groups with 30+ students per class",
+            "Taught private guitar lessons and group classes of 4-7 students aged 4-70",
+            "Coached students of all ages to perform confidently, culminating in solo recitals",
           ]}
         />
       </Grid>

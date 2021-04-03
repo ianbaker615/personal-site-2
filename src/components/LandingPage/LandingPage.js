@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Paper } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
@@ -17,8 +17,8 @@ const useStyles = makeStyles(theme => ({
     "& i": {
       color: "#454545",
       fontSize: "3em",
-      padding: "8px"
-    }
+      padding: "8px",
+    },
   },
   avatar: {
     maxWidth: "200px",
@@ -28,10 +28,10 @@ const useStyles = makeStyles(theme => ({
     boxShadow: `-webkit-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.49);
     -moz-box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.49);
     box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.49);`,
-    [theme.breakpoints.up('sm')]: {
+    [theme.breakpoints.up("sm")]: {
       maxWidth: "250px",
     },
-  }
+  },
 }));
 
 function LandingPage(props) {
@@ -48,7 +48,7 @@ function LandingPage(props) {
       <Grid item xs={12} sm={10} md={6}>
         <Paper className={classes.paper}>
           <h1>Full Stack Web Developer</h1>
-          <p>Javascript | React | Node | Mocha | HMTL | CSS | CLI</p>
+          <p>Javascript | React | Node | Express | HMTL | CSS | CLI</p>
           <div className={classes.socialLinks}>
             {/* LinkedIn */}
             <a

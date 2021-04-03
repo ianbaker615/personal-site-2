@@ -3,11 +3,11 @@ import { Grid, Container } from "@material-ui/core";
 import Project from "./Project/Project";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   cardGrid: {
     paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8)
-  }
+    paddingBottom: theme.spacing(8),
+  },
 }));
 
 function Projects() {
@@ -15,15 +15,15 @@ function Projects() {
   return (
     <Container className={classes.cardGrid} maxWidth="md">
       <Grid container spacing={4}>
-        {/* YelpCamp */}
+        {/* Portfolio Website */}
         <Grid item key={1} xs={12} sm={6} md={4}>
           <Project
-            imageUrl="https://i.imgur.com/0KG0iyz.png"
-            imageTitle="YelpCamp landing page"
-            title="YelpCamp"
-            description="Website with multiple pages, user authentication, and CRUD capabilities"
-            github="https://github.com/ianbaker615/YelpCamp"
-            liveDemo="https://tranquil-harbor-51785.herokuapp.com/"
+            imageUrl="https://i.imgur.com/uut5W5X.png"
+            imageTitle="Portfolio Website"
+            title="Portfolio Website"
+            description="This Website! Thanks for visiting"
+            github="https://github.com/ianbaker615/portfolio"
+            liveDemo="https://ianbaker615.github.io/portfolio/"
           />
         </Grid>
 
