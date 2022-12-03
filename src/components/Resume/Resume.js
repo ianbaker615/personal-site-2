@@ -81,19 +81,6 @@ function Resume() {
             </a>
             <br />
 
-            {/* Website */}
-            <a
-              href="https://www.google.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa fa-globe" />
-            </a>
-            <a href="google.com" className="resume-links">
-              IansSiteNeedsURL.com
-            </a>
-            <br />
-
             {/* LinkedIn */}
             <a
               href="https://www.linkedin.com/in/ianpbaker/"
@@ -159,9 +146,23 @@ function Resume() {
 
         <h2>Experience</h2>
         <Divider className={classes.divider} orientation="horizontal" />
+
+        <Experience
+          startYear={"Oct 2021"}
+          endYear={"Present"}
+          jobName="Fullstack Software Engineer II, Balto Software"
+          bullets={[
+            "Decreased integration time for new customers from weeks to minutes for the top 3 software phone systems",
+            "Created several new microservices to improve integration quality using Python, Docker, SQLAlchmemy, and React",
+            "Mentored an intern May - August 2022 and equipped them to make significant contributions to Balto’s codebase",
+            "Implemented several audio-streaming integrations using websockets to consume and process byte-level audio data",
+            "Built an embeddable version of the Balto desktop app to drive channel partnerships with several companies",
+          ]}
+        />
+
         <Experience
           startYear="2020"
-          endYear="Present"
+          endYear="2021"
           jobName="Information Technology Engineer, JC Consulting"
           bullets={[
             "Leveraged Python, Javascript, SQL, to build effective automation tools for web browser and command line",

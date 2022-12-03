@@ -47,8 +47,8 @@ function LandingPage(props) {
       </Grid>
       <Grid item xs={12} sm={10} md={6}>
         <Paper className={classes.paper}>
-          <h1>Full Stack Web Developer</h1>
-          <p>Javascript | React | Node | Express | HMTL | CSS | CLI</p>
+          <h1>Full Stack Software Engineer</h1>
+          <p>Python | FastAPI | Docker | Redis | Javascript | React | Node</p>
           <div className={classes.socialLinks}>
             {/* LinkedIn */}
             <a
@@ -66,15 +66,6 @@ function LandingPage(props) {
               rel="noopener noreferrer"
             >
               <i className="fa fa-github-square" />
-            </a>
-
-            {/* AngelList */}
-            <a
-              href="https://angel.co/u/ian-baker-10"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fa fa-angellist" />
             </a>
           </div>
         </Paper>

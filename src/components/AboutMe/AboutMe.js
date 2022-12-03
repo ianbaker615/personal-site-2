@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
     margin: "0 25%",
     width: "50%",
   },
+  h1: {
+    textAlign: "center",
+  },
 }));
 
 function AboutMe(props) {
@@ -24,8 +27,10 @@ function AboutMe(props) {
     <Grid container justify="center">
       <Grid item xs={11} sm={10} md={9} lg={8}>
         <Paper className={classes.paper}>
-          <p className={classes.textIndent}>
-            Thank you for visiting! I am a Junior Software Developer that is
+          <h1 className={classes.h1}>About Me</h1>
+          <Divider className={classes.divider} />
+          <p>
+            Thank you for visiting! I am Fullstack Software Engineer that is
             passionate about technology and self-motivated learning. My strong
             interpersonal skills augment foundations in core software
             engineering principles. I am eager to leverage my technical
@@ -33,25 +38,25 @@ function AboutMe(props) {
             organization!
           </p>
           <Divider className={classes.divider} />
-          <p className={classes.textIndent}>
+          <p>
             I am always looking to learn more about software development and
-            further my craft. My experiences in programming and engineering
-            classes at Northwestern University enabled me to continue to hone my
-            abilities outside of class and work, as evidenced by my independent
-            studies and projects on my Github. During my internship with
-            Infinity Interactive, I was tasked with creating users, securing
-            their data, and crafting different app-experiences for users with
-            varied authorizations for a medium sized proprietary API. My current
-            role at JC Consulting has me playing to role of technologist, with a
-            focus on automation for the browser and command line using Python
-            and Javascript. I have really grown in this role and have worn many
-            hats, provisioning EC2 instances for backup communication channels,
-            driving the adoption of fundamental software development principles
-            company-wide, and empowering my fellow employees to problem solve
-            thorugh techinal support and education.
+            further my craft. During my internship with Infinity Interactive, I
+            was tasked with creating users, securing their data, and crafting
+            different app-experiences for users with varied authorizations for a
+            medium sized proprietary API. My role at JC Consulting had me
+            playing to role of technologist, with a focus on automation for the
+            browser using Python and Javascript. My current role at Balto
+            Software is the culmination of a lot of hard work and learning. On
+            the integrations team at Balto I built out a custom integration
+            framework that cut customer implementation time from months down to
+            only a few clicks. I was promoted from Fullstack Software Engineer I
+            to II in less than a year and have been thrilled to be using
+            technologies like Python, FastAPI, Javascript, Node, React,
+            PostgreSQL, Redis, Docker, and a litany of others to help the
+            company create rock solid integrations so Balto "just works".
           </p>
           <Divider className={classes.divider} />
-          <p className={classes.textIndent}>
+          <p>
             My previous work as a classical guitar teacher has taught me
             excellent communication skills and the ability to facilitate
             productive conversations between coworkers, parents, and students.
@@ -62,9 +67,18 @@ function AboutMe(props) {
             experience with goal setting and persistence.
           </p>
           <Divider className={classes.divider} />
-          <p className={classes.textIndent}>
+          <p>
             I appreciate you taking the time to learn a little about me! Please
-            feel free to reach out to me at my email or on LinkedIn.
+            feel free to reach out to me at my{" "}
+            <a href="mailto:ianbaker615@gmail.com">Email</a> or on{" "}
+            <a
+              href="https://www.linkedin.com/in/ianpbaker/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            .
           </p>
           <p>Best,</p>
           <p>Ian</p>
