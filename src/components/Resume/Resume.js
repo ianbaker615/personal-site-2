@@ -121,29 +121,6 @@ function Resume() {
       </Grid>
 
       <Grid item xs={12} md={8} className={classes.rightColumn}>
-        <h2>Education</h2>
-        <Divider className={classes.divider} orientation="horizontal" />
-        <Experience
-          startYear={2012}
-          endYear={2016}
-          jobName="Northwestern University - Evanston, IL"
-          bullets={[
-            "Bachelor of Music in Guitar Performance, June 2016",
-            "Minor in Music Technology",
-          ]}
-        />
-
-        <Experience
-          startYear={"Dec."}
-          endYear={"2020"}
-          jobName="Amazon Web Services Certified Solutions Architect - Associate Certification"
-          bullets={[
-            "Learned how to architect and deploy secure, robust applications on on AWS technologies",
-            "Studied architectural design principles to design solutions based on customer requirements",
-            "Gained tools to provide implementation guidance based on best practices through entire lifecycle of project",
-          ]}
-        />
-
         <h2>Experience</h2>
         <Divider className={classes.divider} orientation="horizontal" />
 
@@ -204,6 +181,29 @@ function Resume() {
             "Lead after school guitar program in underserved Chicago neighborhood, three student groups with 30+ students per class",
             "Taught private guitar lessons and group classes of 4-7 students aged 4-70",
             "Coached students of all ages to perform confidently, culminating in solo recitals",
+          ]}
+        />
+
+        <h2>Education</h2>
+        <Divider className={classes.divider} orientation="horizontal" />
+        <Experience
+          startYear={2012}
+          endYear={2016}
+          jobName="Northwestern University - Evanston, IL"
+          bullets={[
+            "Bachelor of Music in Guitar Performance, June 2016",
+            "Minor in Music Technology",
+          ]}
+        />
+
+        <Experience
+          startYear={"Dec."}
+          endYear={"2020"}
+          jobName="Amazon Web Services Certified Solutions Architect - Associate Certification"
+          bullets={[
+            "Learned how to architect and deploy secure, robust applications on on AWS technologies",
+            "Studied architectural design principles to design solutions based on customer requirements",
+            "Gained tools to provide implementation guidance based on best practices through entire lifecycle of project",
           ]}
         />
       </Grid>
