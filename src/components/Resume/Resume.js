@@ -60,7 +60,7 @@ function Resume() {
             className={classes.avatar}
           />
           <h2>Ian Baker</h2>
-          <h4 style={{ color: "grey" }}>Software Developer</h4>
+          <h4 style={{ color: "grey" }}>Software Engineer</h4>
 
           <div className={classes.contactLinks}>
             {/* Phone */}
@@ -125,15 +125,25 @@ function Resume() {
         <Divider className={classes.divider} orientation="horizontal" />
 
         <Experience
+          startYear={"Feb 2022"}
+          endYear={"Current"}
+          jobName="Backend Software Engineer, Acrisure"
+          bullets={[
+            "Transformed monolithic application into microservices and SDKs, resulting in 75% faster carrier onboarding times and improved code maintainability",
+            "Utilized Python, FastAPI, MongoDB, Docker, and Kubernetes to compose and deploy APIs for complex insurance-quoting processes",
+            "Achieved full ownership of business-critical services within 3 months, enhancing monitoring capabilities and increasing test coverage by 25% to ensure optimal uptime",
+          ]}
+        />
+
+        <Experience
           startYear={"Oct 2021"}
-          endYear={"Present"}
+          endYear={"Dec 2022"}
           jobName="Fullstack Software Engineer II, Balto Software"
           bullets={[
-            "Decreased integration time for new customers from weeks to minutes for the top 3 software phone systems",
-            "Created several new microservices to improve integration quality using Python, Docker, SQLAlchmemy, and React",
-            "Mentored an intern May - August 2022 and equipped them to make significant contributions to Balto’s codebase",
-            "Implemented several audio-streaming integrations using websockets to consume and process byte-level audio data",
-            "Built an embeddable version of the Balto desktop app to drive channel partnerships with several companies",
+            "Revolutionized integration process by developing a cutting-edge framework, reducing integration time by over 1000% for top 3 software phone systems",
+            "Increased integration reliability by 70% through development of microservices using Python, FastAPI, Redis, and SQLAlchemy",
+            "Designed user-friendly UI with React, Redux, and Formik, enabling seamless creation and editing of integration configurations",
+            "Implemented state-of-the-art audio-streaming integrations via websockets, optimizing byte-level audio data processing",
           ]}
         />
 
@@ -142,11 +152,8 @@ function Resume() {
           endYear="2021"
           jobName="Information Technology Engineer, JC Consulting"
           bullets={[
-            "Leveraged Python, Javascript, SQL, to build effective automation tools for web browser and command line",
-            "Launched private Rocket.Chat server in AWS cloud to act as backup communication channel",
-            "Drove adoption of fundamental software development principles: version control with Git, error reporting, issue tracking",
-            "Facilitated agreement for $60,000 contract aimed at improving JC Consulting’s flagship product",
-            "Empowered employees to problem-solve through technical support, education",
+            "Developed efficient automation tools using Python and Javascript, resulting in a 60% reduction in manual workloads",
+            "Implemented an AWS-based Rocket.Chat server as an effective alternative communication channel",
           ]}
         />
 
@@ -155,32 +162,8 @@ function Resume() {
           endYear="Dec. 2019"
           jobName="Software Engineer, Infinity Interactive"
           bullets={[
-            "Programmed API endpoints in Node.js for Infinity Interactive’s proprietary Node API",
-            "Utilized CLI tools ag, sed, and npm to streamline development workflows",
-            "Refactored large Javascript codebase to conform to ES6 standards",
-            "Engaged in productive dialogue with senior engineers in iterative code review process",
-          ]}
-        />
-
-        <Experience
-          startYear="2018"
-          endYear="2019"
-          jobName="Online Sales Specialist, Chicago Music Exchange"
-          bullets={[
-            "Generated musical instrument sales via online chat, email, Reverb.com, and social media",
-            "Produced Python scripts with Selenium module to automate salesperson workflows",
-            "Maintained and organized large client base of 100+ musicians",
-          ]}
-        />
-
-        <Experience
-          startYear="2016"
-          endYear="2018"
-          jobName="Teaching Artist, Chicago Institute for Music Education"
-          bullets={[
-            "Lead after school guitar program in underserved Chicago neighborhood, three student groups with 30+ students per class",
-            "Taught private guitar lessons and group classes of 4-7 students aged 4-70",
-            "Coached students of all ages to perform confidently, culminating in solo recitals",
+            "Developed secure API endpoints using Node.js, Passport.js, and MongoDB for user creation and authentication",
+            "Utilized CLI tools like ag, sed, and npm to optimize development workflow",
           ]}
         />
 
@@ -201,9 +184,8 @@ function Resume() {
           endYear={"2020"}
           jobName="Amazon Web Services Certified Solutions Architect - Associate Certification"
           bullets={[
-            "Learned how to architect and deploy secure, robust applications on on AWS technologies",
-            "Studied architectural design principles to design solutions based on customer requirements",
-            "Gained tools to provide implementation guidance based on best practices through entire lifecycle of project",
+            "Learned how to architect and deploy secure, robust applications using AWS",
+            "Gained knowledge to provide implementation guidance through the entire lifecycle of a project",
           ]}
         />
       </Grid>
