@@ -1,51 +1,59 @@
 .App {
-    flex-grow: 1;
-    background: #ddd6f3; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to bottom,
-      #faaca8,
-      #ddd6f3
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to bottom,
-      #faaca8,
-      #ddd6f3
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    width: 100%;
-    height: 100%;
-    min-height: 100vh;
+  flex-grow: 1;
+  background: #ddd6f3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #faaca8,
+    #ddd6f3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #faaca8,
+    #ddd6f3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
 }
 
 .MuiAppBar-root {
-    background-color: black !important;
-    opacity: 0.8;
+  background-color: black !important;
+  opacity: 0.8;
 }
 
 .resume-links {
-    text-decoration: none;
-    color: #fa766e;
-    background: -webkit-linear-gradient(
-      to bottom,
-      #db554e,
-      #8e8a9b
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to bottom,
-      #db554e,
-      #8e8a9b
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    -webkit-background-clip: text;
-    background-clip: text;
+  text-decoration: none;
+  color: #fa766e;
+  background: -webkit-linear-gradient(
+    to bottom,
+    #db554e,
+    #8e8a9b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #db554e,
+    #8e8a9b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  background-clip: text;
 
-    -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .resume-links:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 i.fa {
-    color: #454545;
-    font-size: 1.75em;
-    padding: 8px;
+  color: #454545;
+  font-size: 1.75em;
+  padding: 8px;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
 }

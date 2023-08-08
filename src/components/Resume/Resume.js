@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#27221f",
     color: "white",
     padding: "0 2em",
-    maxHeight: "90.65vh",
+    maxHeight: "100vh",
     overflowY: "scroll",
     [theme.breakpoints.down("sm")]: {
       overflowY: "visible",
@@ -65,7 +65,7 @@ function Resume() {
           <div className={classes.contactLinks}>
             {/* Phone */}
             <a href="tel:1-615-957-4407">
-              <i class="fa fa-phone-square" />
+              <i className="fa fa-phone-square" />
             </a>
             <a href="tel:1-615-957-4407" className="resume-links">
               (615)-957-4407
@@ -74,7 +74,7 @@ function Resume() {
 
             {/* Email */}
             <a href="mailto:ianbaker615@gmail.com">
-              <i class="fa fa-envelope-square" />
+              <i className="fa fa-envelope-square" />
             </a>
             <a href="mailto:ianbaker615@gmail.com" className="resume-links">
               ianbaker615@gmail.com
