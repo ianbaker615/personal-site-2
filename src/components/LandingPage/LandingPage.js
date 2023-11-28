@@ -47,8 +47,11 @@ function LandingPage(props) {
       </Grid>
       <Grid item xs={12} sm={10} md={6}>
         <Paper className={classes.paper}>
-          <h1>Software Engineer</h1>
-          <p>Python | FastAPI | Docker | Redis | Javascript | React | Node</p>
+          <h1>Fullstack Software Engineer</h1>
+          <p>
+            Python | FastAPI | PostgreSQL | MongoDB | Kubernetes | Docker |
+            Javascript | Node | React
+          </p>
           <div className={classes.socialLinks}>
             {/* LinkedIn */}
             <a

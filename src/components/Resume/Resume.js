@@ -62,15 +62,6 @@ function Resume() {
           <h4 style={{ color: "grey" }}>Software Engineer</h4>
 
           <div className={classes.contactLinks}>
-            {/* Phone */}
-            <a href="tel:1-615-957-4407">
-              <i className="fa fa-phone-square" />
-            </a>
-            <a href="tel:1-615-957-4407" className="resume-links">
-              (615)-957-4407
-            </a>
-            <br />
-
             {/* Email */}
             <a href="mailto:ianbaker615@gmail.com">
               <i className="fa fa-envelope-square" />
@@ -124,7 +115,7 @@ function Resume() {
         <Divider className={classes.divider} orientation="horizontal" />
 
         <Experience
-          startYear={"Sept 2022"}
+          startYear={"Sept. 2023"}
           endYear={"Current"}
           jobName="Consulting Fullstack Software Engineer, The Connected Pet Company"
           bullets={[
@@ -135,8 +126,8 @@ function Resume() {
         />
 
         <Experience
-          startYear={"Feb 2022"}
-          endYear={"Sept 2023"}
+          startYear={"Feb. 2022"}
+          endYear={"Sept. 2023"}
           jobName="Consulting Backend Software Engineer, Acrisure"
           bullets={[
             "Transformed monolithic application into microservices and SDKs, resulting in 75% faster carrier onboarding times and improved code maintainability",
@@ -146,8 +137,8 @@ function Resume() {
         />
 
         <Experience
-          startYear={"Oct 2021"}
-          endYear={"Dec 2022"}
+          startYear={"Oct. 2021"}
+          endYear={"Dec. 2022"}
           jobName="Fullstack Software Engineer II, Balto Software"
           bullets={[
             "Revolutionized integration process by developing a cutting-edge framework, reducing integration time by over 1000% for top 3 software phone systems",
@@ -158,8 +149,8 @@ function Resume() {
         />
 
         <Experience
-          startYear="2020"
-          endYear="2021"
+          startYear="July 2020"
+          endYear="Oct. 2021"
           jobName="Information Technology Engineer, JC Consulting"
           bullets={[
             "Developed efficient automation tools using Python and Javascript, resulting in a 60% reduction in manual workloads",
@@ -168,7 +159,7 @@ function Resume() {
         />
 
         <Experience
-          startYear="Sep. 2019"
+          startYear="Sept. 2019"
           endYear="Dec. 2019"
           jobName="Software Engineer, Infinity Interactive"
           bullets={[
