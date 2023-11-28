@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid, Paper, Divider } from "@material-ui/core";
 import Experience from "./ResumeFields/Experience";
-import Skills from "./ResumeFields/Skills";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
@@ -125,9 +124,20 @@ function Resume() {
         <Divider className={classes.divider} orientation="horizontal" />
 
         <Experience
-          startYear={"Feb 2022"}
+          startYear={"Sept 2022"}
           endYear={"Current"}
-          jobName="Backend Software Engineer, Acrisure"
+          jobName="Consulting Fullstack Software Engineer, The Connected Pet Company"
+          bullets={[
+            "Led the complete redevelopment of a business-critical insurance quoting API, leveraging Python and FastAPI to create a highly efficient and scalable RESTful API",
+            "Designed and implemented MongoDB data storage solutions with Beanie ODM to ensure efficient data modeling and management, enhancing data integrity and optimizing retrieval times",
+            "Orchestrated the seamless deployment of Docker containers to a Kubernetes cluster through an automated CI/CD pipeline, ensuring rapid and consistent application scaling and release management",
+          ]}
+        />
+
+        <Experience
+          startYear={"Feb 2022"}
+          endYear={"Sept 2023"}
+          jobName="Consulting Backend Software Engineer, Acrisure"
           bullets={[
             "Transformed monolithic application into microservices and SDKs, resulting in 75% faster carrier onboarding times and improved code maintainability",
             "Utilized Python, FastAPI, MongoDB, Docker, and Kubernetes to compose and deploy APIs for complex insurance-quoting processes",
